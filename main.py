@@ -1,6 +1,6 @@
 import pygame
 import math
-#import numpy 
+import numpy 
 
 
 color1 = (22,22,22)
@@ -11,6 +11,8 @@ black = (0,0,0)
 #nb_cases_sqrt
 #linecoord_x = [resolution(0)/10]
 #linecoord_y = [resolution(0)/10]
+
+matrix = numpy.matrix([[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0]])
 
 
 pygame.init()
@@ -35,5 +37,6 @@ while running:
     pygame.display.flip()
 
     clock.tick(60)
+ 
 
 pygame.quit()
